@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/viewMenu_edit"
+        android:title="도서 수정" />
+    <item
+        android:id="@+id/viewMenu_delete"
+        android:title="도서 삭제" />
+    <item
+        android:id="@+id/viewMenu_share"
+        android:title="공유하기" />
+</menu>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="도서 추가"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/add_image"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@android:drawable/ic_menu_help" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="등록 상태"/>
+
+            <RadioGroup
+                android:id="@+id/addRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/add_rb_done"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="읽기 완료" />
+
+                <RadioButton
+                    android:id="@+id/add_rb_reading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="읽는 중" />
+
+                <RadioButton
+                    android:id="@+id/add_rb_will"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="관심 도서" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="읽은 날짜" />
+
+            <EditText
+                android:id="@+id/add_et_readDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="2021/01/01" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="도서명" />
+
+            <EditText
+                android:id="@+id/add_et_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="도서 이름을 입력하세요"
+                android:inputType="none" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="저자" />
+
+            <EditText
+                android:id="@+id/add_et_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="저자를 입력하세요"
+                android:inputType="none" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="출판사" />
+
+            <EditText
+                android:id="@+id/add_et_publisher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="출판사를 입력하세요"
+                android:inputType="none" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="출판일" />
+
+            <EditText
+                android:id="@+id/add_et_pubDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="2021/01/01" />
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="도서관 정보" />
+
+            <EditText
+                android:id="@+id/add_et_library"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="도서관 정보" />
+
+            <Button
+                android:id="@+id/add_btn_library"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addOnClick"
+                android:text="주변의 도서관 지도에서 가져오기" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="서점 정보" />
+
+            <EditText
+                android:id="@+id/add_et_bookStore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="서점 정보" />
+
+            <Button
+                android:id="@+id/add_btn_bookstore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addOnClick"
+                android:text="주변의 서점 지도에서 가져오기" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="감상평" />
+
+            <EditText
+                android:id="@+id/add_et_contents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:minLines="5"
+                android:hint="감상평을 입력하세요"  />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/add_btn_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="addOnClick"
+                    android:text="추가" />
+
+                <Button
+                    android:id="@+id/add_btn_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="addOnClick"
+                    android:text="취소" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

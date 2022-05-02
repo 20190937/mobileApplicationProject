@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">나의 독서 기록장</string>
+    <string name="api_url">https://openapi.naver.com/v1/search/book.xml?display=50&amp;start=1&amp;query=</string>
+    <string name="client_id">UPu3rkAwwn4h18O635Wq</string>
+    <string name="client_secret">wArUc5yQeR</string>
+    <string name="google_api_key">AIzaSyASRQC_t7KRW3etUQY-zRF6tGbseMELo_8</string>
+</resources>

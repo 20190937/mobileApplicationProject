@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="공유 옵션 설정"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+        <CheckBox
+            android:id="@+id/cb_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제목" />
+
+        <CheckBox
+            android:id="@+id/cb_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="저자" />
+
+        <CheckBox
+            android:id="@+id/cb_publisher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="출판사" />
+
+        <CheckBox
+            android:id="@+id/cb_pubDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="출판일" />
+
+        <CheckBox
+            android:id="@+id/cb_readDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="읽은 날짜" />
+
+        <CheckBox
+            android:id="@+id/cb_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="감상평" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="머리말" />
+
+        <EditText
+            android:id="@+id/et_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="적은 내용이 공유글 앞에 붙습니다"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="꼬리말" />
+
+        <EditText
+            android:id="@+id/ed_tail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="적은 내용이 공유글 뒤에 붙습니다"
+            android:inputType="textMultiLine" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/share_btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="shareOnClick"
+            android:text="옵션 저장" />
+
+        <Button
+            android:id="@+id/share_btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="shareOnClick"
+            android:text="취소" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
